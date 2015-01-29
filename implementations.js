@@ -1,0 +1,28 @@
+'use strict'
+
+module.exports = [
+	['ayepromise'],
+	['bluebird', ['bb']],
+	['d.js', ['d']],
+	['deferredjs'],
+	['es6-promise'],
+	['es6-promise-polyfill'],
+	['es6-promises'],
+	['fate'],
+	['ff'],
+	['fid-promise'],
+	['legendary'],
+	['lie'],
+	['micropromise'],
+	['my-promise', ['my']],
+	['native-promise-only', ['npo']],
+	['promis'],
+	['promiscuous'],
+	['promise'],
+	['promiz'],
+	['q'],
+	['rsvp'],
+	['shvua'],
+	['vow'],
+	['when', ['w']],
+]
