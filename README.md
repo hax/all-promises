@@ -1,6 +1,6 @@
 # all-promises -- Collect all Promise Implementations
 
-This project is try to collect all Promise implementations which follow ECMAScript 6 standard and Promise/A+ 1.1.1 spec.
+This project is try to collect all Promise implementations which follow [ECMAScript 6 draft](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects) (which based on [Promises/A+ 1.1.1](https://promisesaplus.com/)).
 
 ## Usage
 
