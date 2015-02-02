@@ -14,6 +14,74 @@ npm install all-promises
 
 NOTE: All promise implementations are listed as devDependencies, so that `npm install --production` will not install them.
 
+
+### API
+
+#### function *getPromiseConstructor*(name: string): PromiseConstructor
+
+```js
+var Promise = require('all-promises').getPromiseConstructor('q') // q implementation
+var p = new Promise(function (resolve) { resolve(1) })
+p.then(function (x) { assert(x === 1) })
+```
+
+#### default: PromiseConstructor
+
+```sh
+P=rsvp node test
+```
+
+`test.js`
+```js
+var Promise = require('all-promises').default // rsvp implementation
+```
+
+If no env `P` is provided, default to V8 native implementation
+
+#### *list*: Array<PromiseImplementation>
+
+```
+interface PromiseImplementation {
+	name: string,
+	aliases: Array<string>,
+	Promise: PromiseConstructor?,
+	error: Error?
+}
+```
+
+```js
+var list = require('all-promises').list
+
+list.forEach(function (impl, index) {
+	console.log(index + '.', 'package name:', impl.name, 'aliases:', impl.aliases)
+	var Promise = impl.Promise // Promise constructor
+	if (Promise) Promise.resolve(1).then(function (x) { assert(x === 1) })
+	else console.warn(impl.error)
+})
+```
+
+#### function *register*(packageName: string, alias?: string|Array<string>, exportPromise?: string|function)
+#### function *unregister*(name: string): boolean
+#### function *has*(name: string): boolean
+#### function *get*(name: string): PromiseImplementation
+
+```js
+var promises = require('all-promises')
+
+promises.has('es6-promise-polyfill') // false
+promises.register('es6-promise-polyfill')
+promises.has('es6-promise-polyfill') // true
+var impl = promises.get('es6-promise-polyfill')
+assert.deepEqual(impl, {
+	name: 'es6-promise-polyfill',
+	aliases: [],
+	Promise: promises.getPromiseConstructor('es6-promise-polyfill'),
+})
+promises.unregister('es6-promise-polyfill') // true
+promises.has('es6-promise-polyfill') // false
+promises.unregister('es6-promise-polyfill') // false
+```
+
 ## Current list of implementations (order by alphabet)
 
 // TODO
@@ -29,5 +97,9 @@ NOTE: All promise implementations are listed as devDependencies, so that `npm in
 
 	NOTE: Currently most implementations don't pass ES6 Promise Tests, so it's not on the MUST list up to now.
 
-### Edit implementations.js
+### Contribute
 
+ 0. Edit implementations.js
+ 0. Edit package.json (`npm install package-name-of-new-implementation -D`)
+ 0. Run `npm test`, if everything is ok then
+ 0. Send pull request
