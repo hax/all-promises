@@ -69,7 +69,7 @@ list.forEach(function (impl, index) {
 ```
 
 
-#### `function register(packageName: string, alias?: string| [Array<string>, exportPromise?: string](https://npmjs.com/package/Array<string>, exportPromise?: string) | function)`
+#### `function register(packageName: string, alias?: string|Array<string>, exportPromise?: string|function)`
 #### `function unregister(name: string): boolean`
 #### `function has(name: string): boolean`
 #### `function get(name: string): PromiseImplementation`
@@ -94,8 +94,8 @@ promises.unregister('es6-promise-polyfill') // false
 
 ## Current list of implementations (order by alphabet)
 
-	| [package| repo](https://npmjs.com/package/package| repo) |
-	| [--| --](https://npmjs.com/package/--| --) |
+	| package | repo |
+	|--|--|
 	| [bluebird](https://npmjs.com/package/bluebird) |
 	| [es6-promise](https://npmjs.com/package/es6-promise) |
 	| [es6-promise-polyfill](https://npmjs.com/package/es6-promise-polyfill) |
