@@ -9,7 +9,7 @@ module.exports = [
 	['my-promise', ['my']],
 	['native-promise-only', ['npo'], exportPromiseShim],
 	['promiscuous'],
-	['promise'],
+	['promise', 'then'],
 	['promiz'],
 	['q'],
 	['rsvp'],
