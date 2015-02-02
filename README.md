@@ -6,6 +6,8 @@ This project is try to collect all Promise implementations which follow [ECMAScr
 
 The goal of this project is to provide a centric location to ease the comparison and testings of different implementations. Normally you only need one Promise implementation in your application, so you would mostly never use this package in the productions.
 
+<!--To find which Promise implementation you should adopt, or just want a solid Promise implementation, I suggest my-promise.-->
+
 ### Install
 
 ```sh
