@@ -4,7 +4,7 @@
   "description": "Collect all Promise Implementations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,21 @@
   "bugs": {
     "url": "https://github.com/hax/all-promises/issues"
   },
-  "homepage": "https://github.com/hax/all-promises"
+  "homepage": "https://github.com/hax/all-promises",
+  "devDependencies": {
+    "bluebird": "^2.9.3",
+    "es6-promise": "^2.0.1",
+    "es6-promise-polyfill": "^1.0.0",
+    "es6-promises": "^1.0.10",
+    "lie": "^2.8.1",
+    "my-promise": "^1.0.0",
+    "native-promise-only": "^0.7.6-a",
+    "promiscuous": "^0.6.0",
+    "promise": "^6.1.0",
+    "promiz": "^1.0.3",
+    "q": "^1.1.2",
+    "rsvp": "^3.0.16",
+    "vow": "^0.4.8",
+    "when": "^3.7.1"
+  }
 }
