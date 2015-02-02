@@ -19,7 +19,7 @@ NOTE: All implementations are listed as devDependencies, so that `npm install --
 
 ### API
 
-#### ```ts function getPromiseConstructor(name: string): PromiseConstructor```
+#### `function getPromiseConstructor(name: string): PromiseConstructor`
 
 ```js
 var Promise = require('all-promises').getPromiseConstructor('q') // q implementation
@@ -27,7 +27,7 @@ var p = new Promise(function (resolve) { resolve(1) })
 p.then(function (x) { assert(x === 1) })
 ```
 
-#### *default*: PromiseConstructor
+#### `default: PromiseConstructor`
 
 `test.js` file:
 ```js
@@ -41,7 +41,7 @@ P=rsvp node test
 
 If no env `P` is provided, default to V8 native implementation
 
-#### *list*: Array<PromiseImplementation>
+#### `list: Array<PromiseImplementation>`
 
 ```
 interface PromiseImplementation {
@@ -63,10 +63,10 @@ list.forEach(function (impl, index) {
 })
 ```
 
-#### function *register*(packageName: string, alias?: string|Array<string>, exportPromise?: string|function)
-#### function *unregister*(name: string): boolean
-#### function *has*(name: string): boolean
-#### function *get*(name: string): PromiseImplementation
+#### `function register(packageName: string, alias?: string|Array<string>, exportPromise?: string|function)`
+#### `function unregister(name: string): boolean`
+#### `function has(name: string): boolean`
+#### `function get(name: string): PromiseImplementation`
 
 ```js
 var promises = require('all-promises')
