@@ -95,14 +95,16 @@ promises.unregister('es6-promise-polyfill') // false
 ### Criteria
 
  - MUST register on npm
+
  - MUST support `new Promise(function executor(resolve, reject) { ... })`, `Promise.resolve()` and `Promise.reject()` API
+
  - SHOULD pass all [Promise/A+ Tests](https://github.com/promises-aplus/promises-tests)
 
 	NOTE: Currently most implementations don't pass [ES6 Promise Tests](https://github.com/promises-es6/promises-es6), so it's not on the MUST list up to now.
 
 ### Contribute
 
- 0. Edit implementations.js
- 0. Edit package.json (`npm install package-name-of-new-implementation --save-dev`)
+ 0. Edit [implementations.js](https://github.com/hax/all-promises/blob/master/implementations.js)
+ 0. Edit [package.json](https://github.com/hax/all-promises/blob/master/package.json) (`npm install package-name-of-new-implementation --save-dev`)
  0. Run `npm test`, if everything is ok then
- 0. Send pull request
+ 0. Send [pull request](https://github.com/hax/all-promises/pulls)
