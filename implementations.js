@@ -3,7 +3,6 @@
 module.exports = [
 	['bluebird', ['bb']],
 	['es6-promise'],
-	['es6-promise-polyfill'],
 	['es6-promises'],
 	['lie'],
 	['my-promise', ['my']],
