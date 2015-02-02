@@ -98,7 +98,7 @@ promises.unregister('es6-promise-polyfill') // false
 | ------- | ---- | -----
 | [bluebird](https://npmjs.com/package/bluebird) | [petkaantonov/bluebird](https://github.com/petkaantonov/bluebird) | bb
 | [es6-promise](https://npmjs.com/package/es6-promise) | [jakearchibald/es6-promise](https://github.com/jakearchibald/es6-promise) |
-| [es6-promise-polyfill](https://npmjs.com/package/es6-promise-polyfill) | [lahmatiy/es6-promise-polyfill](https://github.com/lahmatiy/es6-promise-polyfill) |
+| [es6-promise-polyfill](https://npmjs.com/package/es6-promise-polyfill) [1] | [lahmatiy/es6-promise-polyfill](https://github.com/lahmatiy/es6-promise-polyfill) |
 | [es6-promises](https://npmjs.com/package/es6-promises) | [Octane/Promise](https://github.com/Octane/Promise) |
 | [lie](https://npmjs.com/package/lie) | [calvinmetcalf/lie](https://github.com/calvinmetcalf/lie) |
 | [my-promise](https://npmjs.com/package/my-promise) | [hax/my-promise](https://github.com/hax/my-promise) | my
@@ -111,6 +111,7 @@ promises.unregister('es6-promise-polyfill') // false
 | [vow](https://npmjs.com/package/vow) | [dfilatov/vow](https://github.com/dfilatov/vow) |
 | [when](https://npmjs.com/package/when) | [cujojs/when](https://github.com/cujojs/when) | w
 
+[1]: based on es6-promise, so excluded from the registery by default
 
 ## How to add a new implementation
 
