@@ -19,8 +19,7 @@ NOTE: All implementations are listed as devDependencies, so that `npm install --
 
 ### API
 
-#### ```ts
-function getPromiseConstructor(name: string): PromiseConstructor```
+#### ```ts function getPromiseConstructor(name: string): PromiseConstructor```
 
 ```js
 var Promise = require('all-promises').getPromiseConstructor('q') // q implementation
