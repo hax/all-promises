@@ -95,7 +95,7 @@ promises.unregister('es6-promise-polyfill') // false
 ## Current list of implementations (order by alphabet)
 
 | package | repo |
-|--|--|
+| ------- | ---- |
 | [bluebird](https://npmjs.com/package/bluebird) |
 | [es6-promise](https://npmjs.com/package/es6-promise) |
 | [es6-promise-polyfill](https://npmjs.com/package/es6-promise-polyfill) |
