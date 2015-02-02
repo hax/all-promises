@@ -1,28 +1,33 @@
 'use strict'
 
 module.exports = [
-	['ayepromise'],
 	['bluebird', ['bb']],
-	['d.js', ['d']],
-	['deferredjs'],
 	['es6-promise'],
 	['es6-promise-polyfill'],
 	['es6-promises'],
-	['fate'],
-	['ff'],
-	['fid-promise'],
-	['legendary'],
 	['lie'],
-	['micropromise'],
 	['my-promise', ['my']],
-	['native-promise-only', ['npo']],
-	['promis'],
+	['native-promise-only', ['npo'], exportPromiseShim],
 	['promiscuous'],
 	['promise'],
 	['promiz'],
 	['q'],
 	['rsvp'],
-	['shvua'],
 	['vow'],
 	['when', ['w']],
 ]
+
+
+function exportPromiseShim(load) {
+
+	var P0 = global.Promise
+	global.Promise = undefined
+
+	load()
+
+	var P1 = global.Promise
+	global.Promise = P0
+
+	return P1
+
+}
