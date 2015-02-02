@@ -94,22 +94,22 @@ promises.unregister('es6-promise-polyfill') // false
 
 ## Current list of implementations (order by alphabet)
 
-	| package | repo |
-	|--|--|
-	| [bluebird](https://npmjs.com/package/bluebird) |
-	| [es6-promise](https://npmjs.com/package/es6-promise) |
-	| [es6-promise-polyfill](https://npmjs.com/package/es6-promise-polyfill) |
-	| [es6-promises](https://npmjs.com/package/es6-promises) |
-	| [lie](https://npmjs.com/package/lie) |
-	| [my-promise](https://npmjs.com/package/my-promise) |
-	| [native-promise-only](https://npmjs.com/package/native-promise-only) |
-	| [promiscuous](https://npmjs.com/package/promiscuous) |
-	| [promise](https://npmjs.com/package/promise) |
-	| [promiz](https://npmjs.com/package/promiz) |
-	| [q](https://npmjs.com/package/q) |
-	| [rsvp](https://npmjs.com/package/rsvp) |
-	| [vow](https://npmjs.com/package/vow) |
-	| [when](https://npmjs.com/package/when) |
+| package | repo |
+|--|--|
+| [bluebird](https://npmjs.com/package/bluebird) |
+| [es6-promise](https://npmjs.com/package/es6-promise) |
+| [es6-promise-polyfill](https://npmjs.com/package/es6-promise-polyfill) |
+| [es6-promises](https://npmjs.com/package/es6-promises) |
+| [lie](https://npmjs.com/package/lie) |
+| [my-promise](https://npmjs.com/package/my-promise) |
+| [native-promise-only](https://npmjs.com/package/native-promise-only) |
+| [promiscuous](https://npmjs.com/package/promiscuous) |
+| [promise](https://npmjs.com/package/promise) |
+| [promiz](https://npmjs.com/package/promiz) |
+| [q](https://npmjs.com/package/q) |
+| [rsvp](https://npmjs.com/package/rsvp) |
+| [vow](https://npmjs.com/package/vow) |
+| [when](https://npmjs.com/package/when) |
 
 
 ## How to add a new implementation
