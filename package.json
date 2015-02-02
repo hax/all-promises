@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/hax/all-promises",
   "devDependencies": {
-    "bluebird": "^2.9.3",
+    "bluebird": "^2.9.5",
     "es6-promise": "^2.0.1",
     "es6-promise-polyfill": "^1.0.0",
     "es6-promises": "^1.0.10",
     "lie": "^2.8.1",
-    "my-promise": "^1.0.0",
+    "my-promise": "^1.0.1",
     "native-promise-only": "^0.7.6-a",
     "promiscuous": "^0.6.0",
     "promise": "^6.1.0",
@@ -34,6 +34,6 @@
     "q": "^1.1.2",
     "rsvp": "^3.0.16",
     "vow": "^0.4.8",
-    "when": "^3.7.1"
+    "when": "^3.7.2"
   }
 }
