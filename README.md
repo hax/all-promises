@@ -96,22 +96,22 @@ promises.unregister('es6-promise-polyfill') // false
 
 | package | repo | alias
 | ------- | ---- | -----
-| [bluebird](https://npmjs.com/package/bluebird) | [petkaantonov/bluebird](https://github.com/petkaantonov/bluebird) | bb
-| [es6-promise](https://npmjs.com/package/es6-promise) | [jakearchibald/es6-promise](https://github.com/jakearchibald/es6-promise) |
-| [es6-promise-polyfill](https://npmjs.com/package/es6-promise-polyfill) [1] | [lahmatiy/es6-promise-polyfill](https://github.com/lahmatiy/es6-promise-polyfill) |
-| [es6-promises](https://npmjs.com/package/es6-promises) | [Octane/Promise](https://github.com/Octane/Promise) |
-| [lie](https://npmjs.com/package/lie) | [calvinmetcalf/lie](https://github.com/calvinmetcalf/lie) |
-| [my-promise](https://npmjs.com/package/my-promise) | [hax/my-promise](https://github.com/hax/my-promise) | my
-| [native-promise-only](https://npmjs.com/package/native-promise-only) | [getify/native-promise-only](https://github.com/getify/native-promise-only) | npo
-| [promiscuous](https://npmjs.com/package/promiscuous) | [RubenVerborgh/promiscuous](https://github.com/RubenVerborgh/promiscuous) |
-| [promise](https://npmjs.com/package/promise) | [then/promise](https://github.com/then/promise) | then
-| [promiz](https://npmjs.com/package/promiz) | [Zolmeister/promiz](https://github.com/Zolmeister/promiz) |
-| [q](https://npmjs.com/package/q) | [kriskowal/q](https://github.com/kriskowal/q) |
-| [rsvp](https://npmjs.com/package/rsvp) | [tildeio/rsvp.js](https://github.com/tildeio/rsvp.js) |
-| [vow](https://npmjs.com/package/vow) | [dfilatov/vow](https://github.com/dfilatov/vow) |
-| [when](https://npmjs.com/package/when) | [cujojs/when](https://github.com/cujojs/when) | w
+| [bluebird](https://www.npmjs.com/package/bluebird) | [petkaantonov/bluebird](https://github.com/petkaantonov/bluebird) | bb
+| [es6-promise](https://www.npmjs.com/package/es6-promise) | [jakearchibald/es6-promise](https://github.com/jakearchibald/es6-promise) |
+| [es6-promise-polyfill](https://www.npmjs.com/package/es6-promise-polyfill) [^1] | [lahmatiy/es6-promise-polyfill](https://github.com/lahmatiy/es6-promise-polyfill) |
+| [es6-promises](https://www.npmjs.com/package/es6-promises) | [Octane/Promise](https://github.com/Octane/Promise) |
+| [lie](https://www.npmjs.com/package/lie) | [calvinmetcalf/lie](https://github.com/calvinmetcalf/lie) |
+| [my-promise](https://www.npmjs.com/package/my-promise) | [hax/my-promise](https://github.com/hax/my-promise) | my
+| [native-promise-only](https://www.npmjs.com/package/native-promise-only) | [getify/native-promise-only](https://github.com/getify/native-promise-only) | npo
+| [promiscuous](https://www.npmjs.com/package/promiscuous) | [RubenVerborgh/promiscuous](https://github.com/RubenVerborgh/promiscuous) |
+| [promise](https://www.npmjs.com/package/promise) | [then/promise](https://github.com/then/promise) | then
+| [promiz](https://www.npmjs.com/package/promiz) | [Zolmeister/promiz](https://github.com/Zolmeister/promiz) |
+| [q](https://www.npmjs.com/package/q) | [kriskowal/q](https://github.com/kriskowal/q) |
+| [rsvp](https://www.npmjs.com/package/rsvp) | [tildeio/rsvp.js](https://github.com/tildeio/rsvp.js) |
+| [vow](https://www.npmjs.com/package/vow) | [dfilatov/vow](https://github.com/dfilatov/vow) |
+| [when](https://www.npmjs.com/package/when) | [cujojs/when](https://github.com/cujojs/when) | w
 
-[1]: based on es6-promise, so excluded from the registery by default
+[^1]: based on es6-promise, so excluded from the registery by default
 
 ## How to add a new implementation
 
