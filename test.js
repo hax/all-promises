@@ -1,6 +1,7 @@
 'use strict'
 
 var promises = require('./index')
+var assert = require('assert')
 
 
 console.log('test getPromiseConstructor')
@@ -16,7 +17,6 @@ p.then(function (x) { assert(x === 1) })
 
 
 console.log('test list')
-var assert = require('assert')
 var list = promises.list
 list.forEach(function (impl, index) {
 	console.log(index + '.', 'package name:', impl.name, 'aliases:', impl.aliases)

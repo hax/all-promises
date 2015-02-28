@@ -39,12 +39,13 @@ exports.register = function register(name, alias, exportPromise) {
 		get Promise() {
 			if (promise !== undefined) return promise
 			try {
-				return promise = getPromise(name, exportPromise)
+				promise = getPromise(name, exportPromise)
 			} catch (e) {
 				console.error(e)
 				impl.error = e
-				return promise = null
+				promise = null
 			}
+			return promise
 		},
 	}
 	list.push(impl)
