@@ -5,16 +5,18 @@ var assert = require('assert')
 
 
 console.log('test getPromiseConstructor')
-var Promise = promises.getPromiseConstructor('q') // q implementation
-var p = new Promise(function (resolve) { resolve(1) })
-p.then(function (x) { assert(x === 1) })
-
+void function () {
+	var Promise = promises.getPromiseConstructor('q') // q implementation
+	var p = new Promise(function (resolve) { resolve(1) })
+	p.then(function (x) { assert(x === 1) })
+}()
 
 console.log('test default')
-var Promise = promises.default
-var p = new Promise(function (resolve) { resolve(1) })
-p.then(function (x) { assert(x === 1) })
-
+void function () {
+	var Promise = promises.default
+	var p = new Promise(function (resolve) { resolve(1) })
+	p.then(function (x) { assert(x === 1) })
+}()
 
 console.log('test list')
 var list = promises.list
