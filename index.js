@@ -32,7 +32,7 @@ exports.register = function register(name, alias, exportPromise) {
 	if (!nameIsAvailable(name)) throw new Error('Duplicated name: ' + name)
 
 	var aliases = alias ? [].concat(alias).filter(nameIsAvailable) : []
-	var promise, error
+	var promise
 	var impl = {
 		name: name,
 		aliases: aliases,
