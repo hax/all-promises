@@ -1,3 +1,8 @@
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Dependency status][deps-image]][deps-url]
+
+
 # all-promises
 
 This project is try to collect all Promise implementations which follow [ECMAScript 6 draft](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects) (which based on [Promises/A+ 1.1.1](https://promisesaplus.com/)).
@@ -133,3 +138,11 @@ promises.unregister('es6-promise-polyfill') // false
  0. Edit [package.json](https://github.com/hax/all-promises/blob/master/package.json) (`npm install package-name-of-new-implementation --save-dev`)
  0. Run `npm test`, if everything is ok then
  0. Send [pull request](https://github.com/hax/all-promises/pulls)
+
+
+[npm-image]: https://img.shields.io/npm/v/all-promises.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/all-promises
+[travis-image]: https://img.shields.io/travis/hax/all-promises.svg?style=flat-square
+[travis-url]: https://travis-ci.org/hax/all-promises
+[david-image]: https://img.shields.io/david/hax/all-promises.svg?style=flat-square
+[david-url]: https://david-dm.org/hax/all-promises
