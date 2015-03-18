@@ -1,6 +1,6 @@
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
-[![Dependency status][deps-image]][deps-url]
+[![Dependency status][david-image]][david-url]
 
 
 # all-promises
