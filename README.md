@@ -21,8 +21,6 @@ The goal of this project is to provide a centric location to ease the comparison
 npm install all-promises
 ```
 
-NOTE: All implementations are listed as devDependencies, so that `npm install --production` will not install them.
-
 
 ### API
 
