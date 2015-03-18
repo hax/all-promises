@@ -21,7 +21,10 @@ void function () {
 console.log('test list')
 var list = promises.list
 list.forEach(function (impl, index) {
-	console.log(index + '.', 'package name:', impl.name, 'aliases:', impl.aliases)
+	console.log(index + '.',
+		'package name:', impl.name,
+		'aliases:', impl.aliases,
+		'version:', impl.version)
 	var Promise = impl.Promise // Promise constructor
 	if (Promise) Promise.resolve(1).then(function (x) { assert(x === 1) })
 	else console.warn(impl.error)
@@ -35,6 +38,7 @@ promises.has('es6-promise-polyfill') // true
 var impl = promises.get('es6-promise-polyfill')
 assert.deepEqual(impl, {
 	name: 'es6-promise-polyfill',
+	version: require('es6-promise-polyfill/package.json').version,
 	aliases: [],
 	Promise: promises.getPromiseConstructor('es6-promise-polyfill'),
 })

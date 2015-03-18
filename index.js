@@ -11,7 +11,12 @@ function nameIsAvailable(name) {
 var native
 if (typeof Promise === 'function') {
 	native = Promise
-	map.native = list[0] = {name: 'native', aliases: [], Promise: Promise}
+	map.native = list[0] = {
+		name: 'native',
+		aliases: [],
+		Promise: Promise,
+		version: process.versions.v8,
+	}
 }
 
 
@@ -32,7 +37,7 @@ exports.register = function register(name, alias, exportPromise) {
 	if (!nameIsAvailable(name)) throw new Error('Duplicated name: ' + name)
 
 	var aliases = alias ? [].concat(alias).filter(nameIsAvailable) : []
-	var promise
+	var promise, version
 	var impl = {
 		name: name,
 		aliases: aliases,
@@ -47,6 +52,15 @@ exports.register = function register(name, alias, exportPromise) {
 			}
 			return promise
 		},
+		get version() {
+			if (version !== undefined) return version
+			try {
+				version = require(name + '/package.json').version
+			} catch (e) {
+				console.error(e)
+			}
+			return version
+		}
 	}
 	list.push(impl)
 	map[name] = impl

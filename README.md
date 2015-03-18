@@ -54,6 +54,7 @@ If no env `P` is provided, default to V8 native implementation
 ```
 interface PromiseImplementation {
 	name: string,
+	version: string,
 	aliases: Array<string>,
 	Promise: PromiseConstructor?,
 	error: Error?
@@ -64,7 +65,10 @@ interface PromiseImplementation {
 var list = require('all-promises').list
 
 list.forEach(function (impl, index) {
-	console.log(index + '.', 'package name:', impl.name, 'aliases:', impl.aliases)
+	console.log(index + '.',
+		'package name:', impl.name,
+		'aliases:', impl.aliases,
+		'version:', impl.version)
 	var Promise = impl.Promise // Promise constructor
 	if (Promise) Promise.resolve(1).then(function (x) { assert(x === 1) })
 	else console.warn(impl.error)
