@@ -1,5 +1,5 @@
-[![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
+[![NPM version][npm-image]][npm-url]
 [![Dependency status][david-image]][david-url]
 
 
@@ -140,9 +140,9 @@ promises.unregister('es6-promise-polyfill') // false
  0. Send [pull request](https://github.com/hax/all-promises/pulls)
 
 
-[npm-image]: https://img.shields.io/npm/v/all-promises.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/all-promises
 [travis-image]: https://img.shields.io/travis/hax/all-promises.svg?style=flat-square
 [travis-url]: https://travis-ci.org/hax/all-promises
+[npm-image]: https://img.shields.io/npm/v/all-promises.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/all-promises
 [david-image]: https://img.shields.io/david/hax/all-promises.svg?style=flat-square
 [david-url]: https://david-dm.org/hax/all-promises
