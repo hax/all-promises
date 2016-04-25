@@ -15,6 +15,7 @@ module.exports = [
 	['rsvp'],
 	['vow'],
 	['when', ['w']],
+	['yaku'],
 ]
 
 
