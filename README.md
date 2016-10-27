@@ -5,7 +5,7 @@
 
 # all-promises
 
-This project is try to collect all Promise implementations which follow [ECMAScript 6 draft](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects) (which based on [Promises/A+ 1.1.1](https://promisesaplus.com/)).
+This project is try to collect all Promise implementations which follow [ECMAScript 6](http://www.ecma-international.org/ecma-262/6.0/) (which based on [Promises/A+ 1.1.1](https://promisesaplus.com/)).
 
 
 ## Usage
