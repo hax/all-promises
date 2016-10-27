@@ -104,6 +104,7 @@ function getPromise(packageName, exportPromise) {
 	if (typeof P !== 'function') throw new Error(
 			'Failed to export Promise constructor from ' + packageName
 			+ ', please recheck its API docs')
+	else new P(function (r) { r() }).then(function () {})
 
 	if (P === native) throw new Error(
 			packageName + ' may be a polyfill which exports native Promise'
@@ -111,9 +112,11 @@ function getPromise(packageName, exportPromise) {
 
 	if (typeof P.resolve !== 'function') throw new Error(
 		'Missing Promise.resolve() method from ' + packageName)
+	else P.resolve().then(function () {})
 
 	if (typeof P.reject !== 'function') throw new Error(
 		'Missing Promise.reject() method from ' + packageName)
+	else P.reject()['catch'](function () {})
 
 	return P
 
