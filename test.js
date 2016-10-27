@@ -13,9 +13,11 @@ void function () {
 
 console.log('test default')
 void function () {
-	var Promise = promises.default
-	var p = new Promise(function (resolve) { resolve(1) })
-	p.then(function (x) { assert(x === 1) })
+	var P = promises.default
+	if (P) {
+		var p = new P(function (resolve) { resolve(1) })
+		p.then(function (x) { assert(x === 1) })
+	}
 }()
 
 console.log('test list')
