@@ -33,7 +33,7 @@ list.forEach(function (impl, index) {
 
 console.log('test has/get/register/unregister')
 promises.has('es6-promise-polyfill') // false
-promises.register('es6-promise-polyfill')
+promises.register('es6-promise-polyfill', [], 'Polyfill')
 promises.has('es6-promise-polyfill') // true
 var impl = promises.get('es6-promise-polyfill')
 assert.deepEqual(impl, {
