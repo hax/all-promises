@@ -117,6 +117,7 @@ promises.unregister('es6-promise-polyfill') // false
 | [rsvp](https://www.npmjs.com/package/rsvp) | [tildeio/rsvp.js](https://github.com/tildeio/rsvp.js) |
 | [vow](https://www.npmjs.com/package/vow) | [dfilatov/vow](https://github.com/dfilatov/vow) |
 | [when](https://www.npmjs.com/package/when) | [cujojs/when](https://github.com/cujojs/when) | w
+| [yaku](https://www.npmjs.com/package/yaku) | [ysmood/yaku](https://github.com/ysmood/yaku) |
 
 [^1]: based on es6-promise, so excluded from the registery by default
 
