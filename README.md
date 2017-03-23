@@ -138,7 +138,7 @@ promises.unregister('es6-promise-polyfill') // false
 ### Contribute
 
  0. Edit [implementations.js](https://github.com/hax/all-promises/blob/master/implementations.js)
- 0. Edit [package.json](https://github.com/hax/all-promises/blob/master/package.json) (`npm install package-name-of-new-implementation --save-dev`)
+ 0. Edit [package.json](https://github.com/hax/all-promises/blob/master/package.json) (`npm install package-name-of-new-implementation --save`)
  0. Run `npm test`, if everything is ok then
  0. Send [pull request](https://github.com/hax/all-promises/pulls)
 
