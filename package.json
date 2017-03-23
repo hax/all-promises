@@ -1,6 +1,6 @@
 {
   "name": "all-promises",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Collect all Promise Implementations",
   "main": "index.js",
   "scripts": {
