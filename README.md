@@ -5,6 +5,8 @@
 
 # all-promises
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hax/all-promises.svg)](https://greenkeeper.io/)
+
 This project is try to collect all Promise implementations which follow [ECMAScript 6](http://www.ecma-international.org/ecma-262/6.0/) (which based on [Promises/A+ 1.1.1](https://promisesaplus.com/)).
 
 
