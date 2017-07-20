@@ -143,11 +143,11 @@ promises.unregister('es6-promise-polyfill') // false
  0. Send [pull request](https://github.com/hax/all-promises/pulls)
 
 
-[travis-image]: https://img.shields.io/travis/hax/all-promises.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/hax/all-promises.svg
 [travis-url]: https://travis-ci.org/hax/all-promises
-[greenkeeper-image]: https://badges.greenkeeper.io/hax/all-promises.svg?style=flat-square
+[greenkeeper-image]: https://badges.greenkeeper.io/hax/all-promises.svg
 [greenkeeper-url]: https://greenkeeper.io/
-[npm-image]: https://img.shields.io/npm/v/all-promises.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/all-promises.svg
 [npm-url]: https://npmjs.org/package/all-promises
-[david-image]: https://img.shields.io/david/hax/all-promises.svg?style=flat-square
+[david-image]: https://img.shields.io/david/hax/all-promises.svg
 [david-url]: https://david-dm.org/hax/all-promises
