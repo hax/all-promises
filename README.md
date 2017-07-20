@@ -1,11 +1,9 @@
-[![Build status][travis-image]][travis-url]
-[![NPM version][npm-image]][npm-url]
-[![Dependency status][david-image]][david-url]
-
-
 # all-promises
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/hax/all-promises.svg)](https://greenkeeper.io/)
+[![Build status][travis-image]][travis-url]
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
+[![NPM version][npm-image]][npm-url]
+[![Dependency status][david-image]][david-url]
 
 This project is try to collect all Promise implementations which follow [ECMAScript 6](http://www.ecma-international.org/ecma-262/6.0/) (which based on [Promises/A+ 1.1.1](https://promisesaplus.com/)).
 
@@ -147,6 +145,8 @@ promises.unregister('es6-promise-polyfill') // false
 
 [travis-image]: https://img.shields.io/travis/hax/all-promises.svg?style=flat-square
 [travis-url]: https://travis-ci.org/hax/all-promises
+[greenkeeper-image]: https://badges.greenkeeper.io/hax/all-promises.svg?style=flat-square
+[greenkeeper-url]: https://greenkeeper.io/
 [npm-image]: https://img.shields.io/npm/v/all-promises.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/all-promises
 [david-image]: https://img.shields.io/david/hax/all-promises.svg?style=flat-square
