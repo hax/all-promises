@@ -25,7 +25,7 @@
 		"es6-promise": "~4.2.0",
 		"es6-promise-polyfill": "~1.2.0",
 		"es6-promises": "~1.0.10",
-		"lie": "~3.2.0",
+		"lie": "~3.3.0",
 		"my-promise": "~1.1.0",
 		"native-promise-only": "~0.8.1",
 		"promiscuous": "~0.7.0",
